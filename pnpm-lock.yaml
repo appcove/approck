@@ -1,0 +1,25 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  lib/approck-example: {}
+
+  lib/approck-example-mod1: {}
+
+  lib/approck-example-mod2:
+    dependencies:
+      ts-toolbelt:
+        specifier: 9.6.0
+        version: 9.6.0
+
+  lib/granite: {}
+
+packages:
+
+  /ts-toolbelt@9.6.0:
+    resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}
+    dev: false

@@ -1,0 +1,101 @@
+body {
+    background-color: #F7F7F7 !important;
+    overflow-y: auto;
+    margin-bottom: 10%;
+}
+
+header {
+    position: fixed; 
+    top: 0; left: 0; right: 0; 
+    background-color: #ffffff; 
+    z-index: 100;
+}
+
+.nav-logo {
+    width: 200px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.nav2 {
+    color: #008080;
+    font-weight: 500;
+}
+
+.bg-teal {
+    background-color: #008080;
+    color: white;
+}
+
+.main-content {
+    margin-top: 160px;
+}
+
+.footer {
+    background-color: #F7F7F7 !important;
+    border-top: 2px solid #16181E
+}
+
+.home-section {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 30px;
+}
+
+.home-gray {
+    background-color: #dbdbdb;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.home-white {
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+.img-vscode {
+    width: 100%;
+    height: auto;
+}
+.img-check {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heart-icon {
+    color: red;
+    font-size: 24px;
+}
+
+.thank-you-text {
+    font-size: 24px;
+    margin-top: 10px;
+}

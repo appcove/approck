@@ -1,0 +1,13 @@
+
+bux-input-text-currency > input {
+    width: 100%;
+    display: inline-block;
+    border-radius: .125rem;
+    border: 1pt solid #000;
+    text-align: right;
+    background-color: white;
+}
+
+bux-input-text-currency > input:invalid {
+    background-color:lightpink ;
+}

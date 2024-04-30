@@ -1,0 +1,7 @@
+{
+  "name": "approck-example-mod2",
+  "version": "0.1.0",
+  "dependencies": {
+    "ts-toolbelt": "9.6.0"
+  }
+}

@@ -1,0 +1,21 @@
+[package]
+name = "approck-example-mod1"
+version = "0.1.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata.acp]
+module = {}
+extends = ["approck-example-mod2"]
+
+
+[dependencies]
+approck = { workspace = true }
+granite = { workspace = true }
+granite-postgres = { workspace = true }
+granite-redis = { workspace = true }
+
+serde = { workspace = true, features = ["derive"] }
+maud = { workspace = true }
+

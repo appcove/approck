@@ -1,0 +1,12 @@
+bux-input-text-integer > input {
+    width: 100%;
+    display: inline-block;
+    border-radius: .125rem;
+    border: 1pt solid #000;
+    text-align: right;
+    background-color: white;
+}
+
+bux-input-text-integer > input:invalid {
+    background-color:lightpink ;
+}

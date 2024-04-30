@@ -1,0 +1,39 @@
+
+bux-floater {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    width: 'max-content';
+    top: 0;
+    left: 0;
+    border: 0.05rem solid #ccc;
+    border-radius: 1.0rem;
+    background-color: #fff;
+    box-shadow: 0 0 1.0rem rgba(0, 0, 0, .75);
+    margin: 0.5rem;
+
+
+    > x-title {
+        background-color: #ccc;
+        padding: 0.25rem 1rem; 
+        display: flex;
+        border-top-left-radius: 1.0rem;
+        border-top-right-radius: 1.0rem;
+
+        > span {
+            font-weight: bold;
+            flex: 1;
+        }
+
+        > a {
+            margin-left: 1rem;
+        }
+    }
+
+    > x-content {
+        display: block;
+        padding: 1rem;
+    }
+
+}
+

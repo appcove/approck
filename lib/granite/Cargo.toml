@@ -1,0 +1,14 @@
+[package]
+name = "granite"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.acp]
+module = {}
+
+
+[dependencies]
+chrono.workspace = true
+granite-macros = { path = "../granite-macros" }
+rand.workspace = true
+sha2.workspace = true

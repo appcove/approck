@@ -1,0 +1,15 @@
+[package]
+name = "granite-redis"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+granite = { workspace = true }
+
+bb8 = { workspace = true }
+bb8-redis = { workspace = true }
+error-stack = { workspace = true }
+redis = { workspace = true, features = ["json"] }
+serde = { workspace = true, features = ["derive"] }
+tokio = { workspace = true, features = ["full"] }
+serde_json.workspace = true

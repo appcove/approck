@@ -1,0 +1,4 @@
+meta/dprint-* filter=lfs diff=lfs merge=lfs -text
+meta/pnpm-* filter=lfs diff=lfs merge=lfs -text
+meta/esbuild-* filter=lfs diff=lfs merge=lfs -text
+

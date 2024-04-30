@@ -1,0 +1,8 @@
+[app.approck-example]
+redis.host = "127.0.0.1"
+redis.database = 0
+postgres.host = "127.0.0.1"
+postgres.role = ""
+postgres.password = ""
+postgres.database = ""
+ 

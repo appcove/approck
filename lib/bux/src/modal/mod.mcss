@@ -1,0 +1,53 @@
+
+dialog.bux-modal {
+    display: none;
+}
+
+dialog.bux-modal[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+dialog.bux-modal[open] {
+    display: flex;
+    flex-direction: column;
+    border: 1pt solid black;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    padding: 0;
+    border-radius: 1rem;
+ 
+    > header {
+        display: flex;
+        padding: 0.5rem;
+        background-color: #ccc;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+                    
+        > span {
+            flex: 1;
+            font-weight: bold;
+        }
+
+        > a {
+            margin-left: 1rem;
+        }
+
+    }
+
+    > main {
+        display: block;
+        flex: 1;
+        background-color: white;
+        padding: 1rem;
+    }
+
+    > footer {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        background-color: #eee;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+}
+
+

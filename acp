@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# change to the directory of this script
+cd $(dirname "$(realpath "$0")") || exit 1
+
+# if the first arg is `--help` or `-h`, print the help message
+if [[ $1 == "init" ]]; then
+    # fail on errors
+    set -e
+    # echo commands
+    set -x
+    cargo build --release -p acp
+    exec target/release/acp init
+fi
+
+# if target/release/acp is not there and executable, then emit a message to run ./acp init
+if [[ ! -x target/release/acp ]]; then
+    echo "run \`./acp init\` to install acp"
+    exit 1
+fi
+
+# extract the current version out of meta/acp/Cargo.toml
+version=$(grep -oP 'version = "\K[^"]+' meta/acp/Cargo.toml | head -n 1)
+
+# run the local acp command
+exec target/release/acp --require-version "$version" "$@"
+

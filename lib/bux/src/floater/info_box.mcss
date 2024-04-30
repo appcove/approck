@@ -1,0 +1,5 @@
+
+
+bux-floater.InfoBox {
+    max-width: 40rem;
+}

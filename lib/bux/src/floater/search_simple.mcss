@@ -1,0 +1,15 @@
+
+
+bux-floater.SearchSimple {
+
+    x-search {
+        display: flex;
+        gap: 10pt;    
+    }
+    
+    x-result {
+        display: none; /* will be overriden on style */
+        margin-top: 1rem;
+        border-top: 1pt solid #ccc;
+    }
+}
